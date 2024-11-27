@@ -9,7 +9,9 @@
     "pretty:check": "prettier --check ."
   },
   "dependencies": {
+    "@gqlpt/adapter-base": "^0.0.0-alpha.30",
     "@hypermode/modus-sdk-as": "^0.13.5",
+    "gqlpt": "^0.0.0-alpha.30",
     "json-as": "^0.9.26"
   },
   "devDependencies": {
