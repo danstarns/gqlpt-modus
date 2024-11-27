@@ -4,6 +4,10 @@ import { Adapter } from "@gqlpt/adapter-base";
 const MODUS_URL = "http://localhost:8686/graphql";
 
 class ModusAdapter extends Adapter {
+  constructor() {
+    super();
+  }
+
   async connect(): Promise<void> {
     try {
       const response = await fetch(MODUS_URL, {
@@ -38,9 +42,6 @@ class ModusAdapter extends Adapter {
       console.error("Error connecting to the GraphQL endpoint:", error);
       throw error;
     }
-  }
-  constructor() {
-    super();
   }
 
   async sendText(query: string) {
